@@ -1,10 +1,15 @@
 <?php
-	require 'conecta_banco.php';
+	include 'consulta_livros.php';
 
-    $sth = $conn->prepare("SELECT * FROM livro WHERE estoque > 0 ORDER BY titulo");
-    $sth->execute();
-    // http://php.net/manual/pt_BR/pdostatement.fetchall.php
-    $results = $sth->fetchAll(PDO::FETCH_ASSOC);
+	foreach ($results as $value) {
+		echo '<option value="' . $value['id'] . '|' . 
+								 $value['titulo'] . '|' . 
+								 $value['preco'] . '">';
+		echo $value['titulo'] . ', ' . 
+			 $value['autor'] . 
+			 ' (R$ ' . $value['preco'] .')';
+		echo '</option>';
+	}
 
 	//$sth = null; 
     $conn = null;

@@ -13,15 +13,6 @@
             <option value="chimamanda">O Perigo de uma História Única</option-->
             <?php 
                 include 'lista_livros.php';
-                foreach ($results as $value) {
-                    echo '<option value="' . $value['id'] . '|' . 
-                                             $value['titulo'] . '|' . 
-                                             $value['preco'] . '">';
-                    echo $value['titulo'] . ', ' . 
-                         $value['autor'] . 
-                         ' (R$ ' . $value['preco'] .')';
-                    echo '</option>';
-                }
             ?>
         </select>
         <br/><br/>
