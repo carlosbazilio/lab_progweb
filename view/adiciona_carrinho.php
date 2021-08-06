@@ -19,7 +19,7 @@
     <p>Carrinho vazio.</p>
 <?php endif ?>
 
-<p>c
+<p>
 	Quantidade de acessos: <?php echo $_SESSION['count']; ?> vez(es).
 </p>
 

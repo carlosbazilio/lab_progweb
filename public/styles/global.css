@@ -1,0 +1,62 @@
+#livros
+{
+    appearance: auto;
+    
+    width : 45%;
+    
+    height: 125px;
+
+    background-color:  rgba(160, 238, 238, 0.267);
+}
+
+select.decorated option:hover 
+{  
+    box-shadow:0 0 10px 100px #1882A8 inset;
+}
+
+* {
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+}
+
+form {
+    
+    width: 45%;
+
+    height: 35%;
+
+    display: flex;
+    
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    background-color: rgba(252, 252, 252, 0.849);
+
+    border: 1.5px solid #3332;
+
+    border-radius: 7px;
+}
+
+option {
+    width: 100%;
+    /* margin: 0 auto; */
+}
