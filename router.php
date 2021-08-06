@@ -1,0 +1,5 @@
+<?php
+    $routes = [
+        "/" => "view/loja"
+    ]
+?>
