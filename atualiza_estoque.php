@@ -8,8 +8,7 @@
 
 	$in  = str_repeat('?,', count($ids_carrinho) - 1) . '?';
 	$sql = "UPDATE livro SET estoque=estoque-1 WHERE id IN ($in)";
-	// $ids = implode(',', $ids_carrinho);
-
+	
 	// Prepare statement
 	$stmt = $conn->prepare($sql);
 
