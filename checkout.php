@@ -1,6 +1,8 @@
 <?php
 	require 'sessao.php';
 	require 'atualiza_estoque.php';
+
+	$_SESSION = [];
 ?>
 
 <p>
